@@ -1,0 +1,40 @@
+1. i changed the mutation method back to sigmoid flipping which is 1-weight value
+2. switched back to sigmoid and use the max probability output as the direction to go in
+3. im gene swap method im using a copy of a the parent lists instead of the lists itself
+4. made it so the food never spawns in the starting position lines
+5. increased population size to 50
+6. Elitism selection in use
+7. I added UPOS - Uniform Probability Operator Swapping
+8. changed mutation code similar to gene_swap method, more efficent gene by gene prob_chance checking
+9. fixed general code bugs
+10. switched back to tanh activation
+11. fixed the first snake score timing bug by reinstantiating the clock every new instance
+12. cleaned up the main and neuralnet code and added some comments
+13. Fixed GUI and added button and vision graphics as well as more NN info
+14. Made it so that half of the best snakes of each generation pass onto the next generation
+    and the rest are filled with their children.
+15. Adding learning_rate
+15. in line 247: main -> if val > self.max_prob_dir[1] AND VAL > 0:
+    added the "and val > 0" so that it doesnt choose the max number out of negative numbers
+16. changed fitness function to f(t, x) = log(t+1) + (x + 1)^2
+17. added 2nd hidden layer of size 16 and changed code to make it work with W3 weight list
+18. added pair parentGen method and changed crossover
+19. added threading and multiprocessing to gene_swap
+20. combined mutation and gene_swap now cross_mutate
+21. added multithreading and multiprocessing to gene_swap and other parts of the code
+22. general optimization and performance improvements
+
+things to note:
+in the future it would be better to only save the best chromosome out of each
+genome file to save storage space.
+
+the mutation method actually looks at every gene/bit in the whole chromosome and
+gives every single gene a mutation_rate chance of flipping. In the future we might
+want to make it so that a random bit is selected out of the chromosome and that
+one gene has a chance of mutation at a rate of mutation_rate
+
+idea?
+What if i always keep the best ever chromosome until one does better than that one?
+like in alphago?
+
+TODO: update all method descriptions

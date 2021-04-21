@@ -1,0 +1,12 @@
+Python 3.6.4
+
+pygame for 3.6
+C:/python36/scripts/pip3 install pygame
+pip -m install pygame
+
+numpy for 3.6
+C:/python36/scripts/pip3 install numpy
+pip -m instlal numpy
+
+matplotlib for 3.6
+C:/python36/scripts/pip3 install matplotlib

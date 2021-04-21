@@ -1,0 +1,13 @@
+TODOs for NeuralNet.py
+
+TODO update all method comments, especially the mutation method
+TODO Optimize and make faster selection and crossover methods.
+---------------------------------------------------------------------
+TODOs for main.py
+
+TODO: put a comment in every method that describes the attributes that they take and the type.
+TODO: create better variable names for everything
+TODO: Add Logging to each method in the whole program that logs errors and potential errors to a log file.
+
+not necessary yet
+TODO: trigger game over screen which shows total points and the word game over in the player.die() method
